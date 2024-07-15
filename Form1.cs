@@ -271,18 +271,8 @@ namespace numerosEnteros
 
         private void verificarSiPerteneceToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if((objNum2 == null) || (objNum3 == null))
-                {
-                    objNum1.number_Intersection(objNum2, ref objNum3);
-                    textBox6.Text = string.Concat("El numero es: " + objNum3.get_Date());
-                }               
-            }
-            catch
-            {
-                Interaction.MsgBox("ingrese los datos...");
-            }
+            objNum1.number_Intersection(objNum2, ref objNum3);
+            textBox6.Text = string.Concat("El numero es: " + objNum3.get_Date());
         }
 
         public Form1()
